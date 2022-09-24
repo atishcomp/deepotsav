@@ -15,7 +15,7 @@ app.use(cors())
 // const imagedataRoutes = require("./routes/imagedata")
 
 app.get('/',(req,res)=>{
-    res.send("HELLO TO TEST UPLOAD, SOMETHING CHANGED, OTHER THINGS ALSO CREATED")
+    res.send("HELLO TO TEST UPLOAD, this is atish yadav, OTHER THINGS ALSO CREATED")
   })
 
 
