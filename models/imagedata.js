@@ -19,7 +19,7 @@ given_time:{
     type:String
 },
 ghat_no:{
-    type:Number
+    type:String
 },
 username:{
     type:String

@@ -23,20 +23,18 @@ router.post('/uploadimage',upload.single('image'),async (req,res)=>{
         console.log(req.body)
         const result = await cloudinary.uploader.upload(req.file.path)
         // res.json(result)
-        const body_data=(JSON.stringify(req.body))
-        const myArray = body_data.split(",");
-        console.log(myArray)
-        console.log(myArray[0])
+       console.log(req.body.username)
+        
         
         var curr_time=Date.now();
         console.log(result)
        let imagedata = new Imagedata({
         image_url:result.secure_url,
         cloudinary_id:result.public_id,
-        description:myArray[2],
-        given_time:curr_time,
-        ghat_no:myArray[1],
-        username:myArray[0]
+        description:req.body.caption,
+        // given_time:curr_time,
+        ghat_no:req.body.ghat_no,
+        username:req.body.username
        })
          await imagedata.save();
          res.json(imagedata)

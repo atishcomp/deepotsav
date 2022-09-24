@@ -35,7 +35,7 @@ exports.getImagedata=(req,res,next)=>{
         }
       var imageData=[];
         for(var a=0;a<imagedata.length;a++){
-            imageData[a]={image_data:imagedata[a].image_url,caption:imagedata[a].description,id:imagedata[a]._id,time:imagedata[a].createdAt}
+            imageData[a]={image_data:imagedata[a].image_url,caption:imagedata[a].description,id:imagedata[a]._id,time:imagedata[a].createdAt,ghat:imagedata[a].ghat_no}
         }
        console.log(imagedata);
         res.json(imageData);
