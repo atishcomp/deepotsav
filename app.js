@@ -15,7 +15,7 @@ const userRoutes = require("./routes/user")
 const imagedataRoutes = require("./routes/imagedata")
 
 app.get('/',(req,res)=>{
-    res.send("HELLO TO TEST UPLOAD theatishyadav, UPDATED THE THINGS")
+    res.send("HELLO TO TEST UPLOAD theatishyadav, UPDATED THE THINGS,and many more")
   })
 
 
