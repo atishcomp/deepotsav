@@ -60,7 +60,4 @@ router.delete("/imagedata/delete/:id",deleteImagedata);
 
 
 
-
-
-
 module.exports= router;
