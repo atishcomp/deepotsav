@@ -19,7 +19,7 @@ app.get('/',(req,res)=>{
   })
 
 
-  const CONNECTION_URL=`mongodb+srv://deepotsav75:deep9670110015@cluster0.dzhcm8c.mongodb.net/?retryWrites=true&w=majority`
+  const CONNECTION_URL=`mongodb+srv://deepotsav75:password@cluster0.dzhcm8c.mongodb.net/?retryWrites=true&w=majority`
   //TODO: use environmnet variable to secure the data
   //we are using cloud atlas database
   
